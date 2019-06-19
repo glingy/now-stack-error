@@ -2,9 +2,9 @@
   "version": 2,
   "name": "now-stack-error",
   "builds": [
-    {"src": "/src/*.js", "use": "@now/node"}
+    {"src": "/src/error.js", "use": "@now/node"}
   ],
    "routes": [
-     {"src": "/(.*)", "dest": "/src/$1.js"}
+     {"src": "/", "dest": "/src/error.js"}
    ]
 }
